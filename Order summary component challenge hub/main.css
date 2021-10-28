@@ -70,7 +70,7 @@
     }
     
     
-    .generic-component {
+    .plan-card {
     
         display: flex;
         flex-direction: row;
@@ -240,7 +240,7 @@
     }
 
 
-    .generic-component {
+    .plan-card {
 
         display: flex;
         flex-direction: row;
@@ -294,10 +294,15 @@
         text-decoration: underline;
     }
 
+    #plan-change:hover {
+        cursor: pointer;
+        color: hsl(245, 92%, 70%);
+    }
+
 
     .btn-primary {
-        height: 50px;
         width: 354px;
+        height: 50px;
         padding: 0;
         margin: 16px 0;
 
@@ -311,6 +316,16 @@
         font-size: 16px;
         font-weight: 700;
         font-family: 'Red Hat Display';
+
+        transition-property: background-color;
+        transition-duration: 200ms;
+    }
+
+    .btn-primary:hover {
+        cursor: pointer;
+        transition-property: background-color;
+        transition-duration: 200ms;
+        background-color: hsl(245, 92%, 70%);
     }
 
     .btn-secondary {
@@ -328,7 +343,18 @@
         font-size: 16px;
         font-weight: 700;
         font-family: 'Red Hat Display';
+
+        transition-property: background-color;
+        transition-duration: 200ms;
     }
+
+    .btn-secondary:hover {
+        cursor: pointer;
+        transition-property: background-color;
+        transition-duration: 200ms;
+        background-color: hsl(245, 52%, 95%);
+    }
+    
 
 
     #illustration-container {
