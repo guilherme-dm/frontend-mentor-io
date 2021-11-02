@@ -3,6 +3,117 @@
     --dark-cyan: hsl(184, 100%, 22%);
     --very-dark-cyan: hsl(179, 100%, 13%);
 
-    --transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
     --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    box-sizing: border-box;
+    text-rendering: geometricPrecision;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 97vh;
+
+    background-color: var(--very-light-gray);
+}
+
+
+
+
+
+
+@media (min-width: 600px) {
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+    max-width: 920px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-size: 40px;
+    margin: 32px auto 28px;
+    color: var(--very-light-gray);
+}
+
+p {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--transparent-white);
+
+    margin-bottom: 80px;
+}
+
+button {
+    border-radius: 100px;
+    width: 146px;
+    height: 48px;
+    
+    padding: 14px;
+    border: 2px solid var(--very-light-gray);
+    
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+
+    transition-property: color, border, background;
+    transition-duration: 400ms;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid var(--very-light-gray);
+    background-color: transparent;
+
+    transition-property: color, border;
+    transition-duration: 400ms;
+}
+
+
+
+
+.sedans {
+    padding: 48px;
+    min-height: 500px;
+    background-color: var(--bright-orange);
+}
+.sedans button {
+    color: var(--bright-orange);
+}
+.sedans button:hover {
+    color: var(--very-light-gray);
+}
+
+.suvs {
+    padding: 48px;
+    min-height: 500px;
+    background-color: var(--dark-cyan);
+}
+.suvs button {
+    color: var(--dark-cyan);
+}
+.suvs button:hover {
+    color: var(--very-light-gray);
+}
+
+.luxury {
+    padding: 48px;
+    min-height: 500px;
+    background-color: var(--very-dark-cyan);
+}
+.luxury button {
+    color: var(--very-dark-cyan);
+}
+.luxury button:hover {
+    color: var(--very-light-gray);
+}
+
 }
